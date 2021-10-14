@@ -1,13 +1,13 @@
-# Watchdog
+# ⚙ Watchdog
 Watchdog for ESP32
 
-## Install
+## ⚡ Install
 
 1. Download the code
 2. Add the folder under `Arduino/libraries`
 3. Restart Arduino IDE
 
-## Library details
+## 🔧 Library details
 
 Public functions:
 
@@ -23,7 +23,7 @@ Public functions:
 
     Reset the Watchdog time
 
-## Example
+## 🖌 Example
 
 ```c++
 #include <Watchdog.h>
@@ -39,3 +39,12 @@ void loop() {
   wdt.handle();
 }
 ```
+
+
+## 🙋‍♂️ Support & Contributing
+
+Contributions are welcome! Feel free to open an issue or submit a pull request if you have a way to improve this project.
+
+Make sure your request is meaningful and you have tested the app locally before submitting a pull request.
+
+💙 If you like this project, give it a ⭐ and share it with friends!
