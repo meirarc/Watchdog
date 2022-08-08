@@ -1,5 +1,10 @@
 # ⚙ Watchdog
-Watchdog for ESP32
+
+The purpose of the IWDT is to ensure that interrupt service routines (ISRs) are not blocked from running for a prolonged period of time (i.e., the IWDT timeout period). Blocking ISRs from running in a timely manner is undesirable as it can increases ISR latency, and also prevents task switching (as task switching is executed form an ISR). The things that can block ISRs from running include:
+
+- Disabling interrupts
+- Critical Sections (also disables interrupts)
+- Other same/higher priority ISRs (will block same/lower priority ISRs from running it completes execution)
 
 ## ⚡ Install
 
